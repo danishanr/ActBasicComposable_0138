@@ -47,8 +47,9 @@ fun TataletakLogin(modifier: Modifier) {
                 fontSize = 16.sp,
                 color = Color.White
             )
+            Spacer(modifier = Modifier.height(height = 30.dp))
 
-            )
+
         }
     }
 }
