@@ -81,6 +81,11 @@ fun TataletakLogin(modifier: Modifier) {
             )
 
             Spacer(modifier = Modifier.height(height = 10.dp))
+
+            Image(
+                painter = foto,
+                contentDescription = null,
+            )
         }
     }
 }
