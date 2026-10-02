@@ -72,6 +72,13 @@ fun TataletakLogin(modifier: Modifier) {
                 color = Color.Blue,
                 fontWeight = FontWeight.Bold
             )
+
+            Text(
+                text = "20240140138",
+                fontSize = 32.sp,
+                color = Color.Black,
+                fontWeight = FontWeight.Bold
+            )
         }
     }
 }
