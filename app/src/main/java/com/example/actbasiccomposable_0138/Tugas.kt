@@ -81,8 +81,8 @@ fun Tugas(modifier: Modifier) {
                     .fillMaxWidth()
                     .height(300.dp)
                     .background(Color.White)
-                    .padding(16.dp)
-
+                    .padding(16.dp),
+                contentAlignment = Alignment.Center
             )
         }
 
