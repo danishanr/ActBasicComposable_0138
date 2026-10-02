@@ -65,6 +65,13 @@ fun TataletakLogin(modifier: Modifier) {
                 color = Color.Red,
                 fontWeight = FontWeight.Bold
             )
+
+            Text(
+                text = "Danisha Novira Rausyanfikri",
+                fontSize = 22.sp,
+                color = Color.Blue,
+                fontWeight = FontWeight.Bold
+            )
         }
     }
 }
