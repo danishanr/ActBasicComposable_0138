@@ -55,8 +55,9 @@ fun TataletakLogin(modifier: Modifier) {
                 contentDescription = null,
                 modifier = Modifier.size(140.dp),
                 contentScale = ContentScale.Fit
-
             )
+
+            Spacer(modifier = Modifier.height(height = 30.dp))
         }
     }
 }
