@@ -1,11 +1,12 @@
 package com.example.actbasiccomposable_0138
 
-import android.widget.Space
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -13,6 +14,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -22,7 +24,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import java.lang.reflect.Modifier
 
 @Composable
 fun Tugas(modifier: Modifier) {
@@ -55,7 +56,7 @@ fun Tugas(modifier: Modifier) {
             // Gambar atas
             Image(
                 painter = logo,
-                contentScale = null,
+                contentDescription = null,
                 modifier = Modifier.size(100.dp)
             )
             Spacer(modifier = Modifier.height(15.dp))
@@ -92,30 +93,28 @@ fun Tugas(modifier: Modifier) {
                         painter = foto,
                         contentDescription = null,
                         modifier = Modifier
-                            .size(200.do)
+                            .size(200.dp)
                             .clip(CircleShape)
                             .border(
                                 3.dp,
                                 Color.White,
-                                CircleShape
+                                RoundedCornerShape(12.dp)
                             ),
                         contentScale = ContentScale.Crop
                     )
                     Spacer(modifier = Modifier.height(10.dp))
 
-                    Spacer(horizontalArrangement = Arrangemnt.Center)
+                    Row(horizontalArrangement = Arrangement.Center) {
                         Text(
                             text = "Review sinkat: "
                         )
+                        Text(
+                            text = "Interstellar adalah film sci-fi yang menarik dengan visual dan musik yang kuat. Ceritanya cukup kompleks, tetapi tetap seru dan memiliki sisi emosional, terutama tentang keluarga dan pengorbanan. Film ini cocok untuk penonton yang menyukai cerita luar angkasa yang tidak hanya mengandalkan aksi, tetapi juga memiliki cerita yang mendalam.",
+                            color = Color.Blue
+                        )
+                    }
                 }
-
             }
-
         }
-
-
     }
-
-
-
 }
