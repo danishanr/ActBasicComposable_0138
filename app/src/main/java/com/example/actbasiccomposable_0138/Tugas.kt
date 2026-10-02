@@ -100,8 +100,8 @@ fun Tugas(modifier: Modifier) {
                                 CircleShape
                             ),
                         contentScale = ContentScale.Crop
-
                     )
+                    Spacer(modifier = Modifier.height(10.dp))
                 }
             }
 
