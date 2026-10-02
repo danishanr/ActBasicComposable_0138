@@ -79,6 +79,8 @@ fun TataletakLogin(modifier: Modifier) {
                 color = Color.Black,
                 fontWeight = FontWeight.Bold
             )
+
+            Spacer(modifier = Modifier.height(height = 10.dp))
         }
     }
 }
