@@ -2,10 +2,12 @@ package com.example.actbasiccomposable_0138
 
 import android.widget.Space
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -69,6 +71,18 @@ fun Tugas(modifier: Modifier) {
             Text(
                 text = "Durasi 169 menit",
                 color = Color.Blue
+            )
+
+            Spacer(modifier = Modifier.height(15.dp))
+
+            // Box bawah lebih besar dari gambar atas
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(300.dp)
+                    .background(Color.White)
+                    .padding(16.dp)
+
             )
         }
 
