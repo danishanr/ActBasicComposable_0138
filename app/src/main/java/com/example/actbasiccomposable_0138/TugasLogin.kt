@@ -58,6 +58,13 @@ fun TataletakLogin(modifier: Modifier) {
             )
 
             Spacer(modifier = Modifier.height(height = 30.dp))
+
+            Text(
+                text = "Nama",
+                fontSize = 18.sp,
+                color = Color.Red,
+                fontWeight = FontWeight.Bold
+            )
         }
     }
 }
