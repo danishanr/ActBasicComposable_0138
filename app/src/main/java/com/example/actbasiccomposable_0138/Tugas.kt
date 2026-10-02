@@ -102,7 +102,13 @@ fun Tugas(modifier: Modifier) {
                         contentScale = ContentScale.Crop
                     )
                     Spacer(modifier = Modifier.height(10.dp))
+
+                    Spacer(horizontalArrangement = Arrangemnt.Center)
+                        Text(
+                            text = "Review sinkat: "
+                        )
                 }
+
             }
 
         }
